@@ -1,12 +1,6 @@
-// todo: make this dynamic via firebase
+import type { Project } from '@/types/ProjectTypes';
 
-type Project = {
-  date: string;
-  title: string;
-  description: string;
-  tags: string[];
-  path: string;
-};
+// todo: make this dynamic via firebase
 
 const ProjectsArray: Project[] = [
   {
@@ -64,14 +58,16 @@ const ProjectsArray: Project[] = [
   {
     date: '2023-11-13',
     title: 'Genetic Algorithm in C',
-    description: 'Implementation of a genetic algorithm to optimize the Rastrigin function.',
+    description:
+      'Implementation of a genetic algorithm to optimize the Rastrigin function.',
     tags: ['Software Development', 'C', 'Heuristic Optimization'],
     path: '/projects/genetic-algorithm',
   },
   {
     date: '2023-11-30',
     title: 'Matrix Multiplication in C',
-    description: 'Implementation of Jacobi and Successive Over-Relaxation methods for matrix multiplication.',
+    description:
+      'Implementation of Jacobi and Successive Over-Relaxation methods for matrix multiplication.',
     tags: ['Software Development', 'C', 'Algorithms'],
     path: '/projects/matrix-multiplication',
   },
@@ -85,8 +81,15 @@ const ProjectsArray: Project[] = [
   {
     date: '2024-07-16',
     title: 'Dataset Curation Web App for Machine Learning',
-    description: 'Web app made for LocalStudent, Inc. for curating dispute model training data.',
-    tags: ['Software Development', 'Web Development', 'TypeScript', 'Firebase', 'Next.js'],
+    description:
+      'Web app made for LocalStudent, Inc. for curating dispute model training data.',
+    tags: [
+      'Software Development',
+      'Web Development',
+      'TypeScript',
+      'Firebase',
+      'Next.js',
+    ],
     path: '/projects/dataset-curation-web-app',
   },
   {
@@ -95,7 +98,7 @@ const ProjectsArray: Project[] = [
     description: 'Silly Discord bot based off Don Quixote from Limbus Company.',
     tags: ['Software Development', 'Python', 'Pycord'],
     path: '/projects/don-quixote-discord-bot',
-  }
+  },
 ];
 
 export { ProjectsArray };

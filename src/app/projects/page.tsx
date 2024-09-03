@@ -29,7 +29,7 @@ const Projects = () => {
               {project.tags.sort().map((tag, index) => (
                 <span
                   key={index}
-                  className="text-sm text-dark-purple bg-rose-quartz p-0.5 rounded-sm"
+                  className="text-sm flex items-center text-center justify-center text-dark-purple bg-rose-quartz py-1 px-2 rounded-sm leading-none"
                 >
                   {tag}
                 </span>

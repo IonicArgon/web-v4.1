@@ -23,7 +23,8 @@ const NotFound = async () => {
       <div id="intro" className="text-cream font-mono mt-8">
         <h1 className="text-4xl font-bold"># oops</h1>
         <p className="mt-4">
-          You&apos;ve stumbled upon a page that I haven&apos;t created yet. Have a cat instead.
+          You&apos;ve stumbled upon a page that I haven&apos;t created yet. Have
+          a cat instead.
         </p>
         <div className="flex justify-center items-center mt-4">
           <Image src={catUrl} alt="A cat" width={400} height={400} />
