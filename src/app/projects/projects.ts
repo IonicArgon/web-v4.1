@@ -12,38 +12,17 @@ const ProjectsArray: Project[] = [
     path: '/projects/dp3',
   },
   {
-    date: '2022-12-04',
-    title: 'Custom Hip Implant Design',
-    description:
-      'Custom hip implant for patient with Legg-Calvé-Perthes disease.',
-    tags: ['iBioMed', 'Biomedical Engineering', 'CAD'],
-    path: '/projects/dp2',
-  },
-  {
-    date: '2023-04-12',
-    title: 'Software for Patients with Multiple Sclerosis',
-    description:
-      'Software to track temperature for MS patients with heat sensitivity.',
-    tags: [
-      'iBioMed',
-      'Biomedical Engineering',
-      'Software Development',
-      'Python',
-    ],
-    path: '/projects/dp4',
-  },
-  {
     date: '2022-02-18',
     title: 'VRC Season - Tipping Point',
     description:
-      'Competition code for the 2021-2022 VRC season, Tipping Point.',
+      'Competition code for the 2021 - 2022 VRC season, "Tipping Point".',
     tags: ['Robotics', 'VEX Robotics', 'C++'],
     path: '/projects/vrc-21-22',
   },
   {
     date: '2021-09-25',
     title: 'VRC Season - Change Up',
-    description: 'Competition code for the 2020-2021 VRC season, Change Up.',
+    description: 'Competition code for the 2020 - 2021 VRC season, "Change Up".',
     tags: ['Robotics', 'VEX Robotics', 'C++'],
     path: '/projects/vrc-20-21',
   },

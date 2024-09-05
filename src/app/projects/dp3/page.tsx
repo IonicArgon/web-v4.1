@@ -12,7 +12,7 @@ const ProjectDP3 = () => {
   return (
     <Project
       projectMetadata={{
-        title: 'BeeAble - Power Wheelchair Control System',
+        title: 'Power Wheelchair Control System',
         shortDescription:
           'Gesture-based control system for power wheelchair users with partial paralysis.',
         titleImage: '/projects/dp3/dp3-fig1.png',
@@ -46,7 +46,7 @@ const ProjectDP3 = () => {
       <p className="mb-4">
         For this design project, we were tasked with creating any Raspberry
         Pi-powered device that fuses sensors and actuators to create some useful
-        system. Besides that, target demographics and the problem definitoon
+        system. Besides that, target demographics and the problem definition
         were completely open-ended. Naturally, this allows for a heavy degree of
         freedom (which was the main thing I loved about this project), but it
         does mean my team and I had to spend a lot of time brainstorming and
@@ -62,7 +62,7 @@ const ProjectDP3 = () => {
       </div>
       <p className="mb-4">
         After a week or two of brainstorming, we settled on increasing the
-        accessbility to mobility. We realized that although there are solutions
+        accessibility to mobility. We realized that although there are solutions
         that exist, they are often prohibitively expensive or cannot be used by
         patients in extenuating circumstances. Since our team believed that
         everyone should have the right to move around freely and independently,
@@ -78,7 +78,7 @@ const ProjectDP3 = () => {
         translated into commands that move the joystick in the desired
         direction. We also added haptic feedback to provide information about
         the state of the system, choosing it over auditory or visual methods to
-        accomodate users with vision, hearing, or cognitive impairments.
+        accommodate users with vision, hearing, or cognitive impairments.
       </p>
       <div className="mb-4 relative w-full max-w-4xl h-[400px]">
         <Image
@@ -116,7 +116,7 @@ const ProjectDP3 = () => {
         code, but they are simple enough that we could write our own. These
         motors do not have encoders, which made it difficult to determine the
         position of the motors at times. Adapting the code to support
-        microstepping helped, but I did wish we had better hardware to create a
+        micro-stepping helped, but I did wish we had better hardware to create a
         more robust solution.
       </p>
 
