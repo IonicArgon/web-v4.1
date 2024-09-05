@@ -5,23 +5,15 @@ import type { Project } from '@/types/ProjectTypes';
 const ProjectsArray: Project[] = [
   {
     date: '2023-03-03',
-    title: 'DP3 - Power Wheelchair Control System',
+    title: 'Power Wheelchair Control System',
     description:
       'Power wheelchair control system for partially paralysed individuals.',
     tags: ['iBioMed', 'Biomedical Engineering', 'Python'],
     path: '/projects/dp3',
   },
   {
-    date: '2022-10-24',
-    title: 'DP1 - Improved Ostomy Bag Design',
-    description:
-      'Improved ostomy bag design for increased comfort and usability.',
-    tags: ['iBioMed', 'Biomedical Engineering', 'Product Design'],
-    path: '/projects/dp1',
-  },
-  {
     date: '2022-12-04',
-    title: 'DP2 - Custom Hip Implant Design',
+    title: 'Custom Hip Implant Design',
     description:
       'Custom hip implant for patient with Legg-Calvé-Perthes disease.',
     tags: ['iBioMed', 'Biomedical Engineering', 'CAD'],
@@ -29,7 +21,7 @@ const ProjectsArray: Project[] = [
   },
   {
     date: '2023-04-12',
-    title: 'DP4 - Software for Patients with Multiple Sclerosis',
+    title: 'Software for Patients with Multiple Sclerosis',
     description:
       'Software to track temperature for MS patients with heat sensitivity.',
     tags: [

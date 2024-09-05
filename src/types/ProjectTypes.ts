@@ -1,3 +1,5 @@
+import React from 'react';
+
 type Project = {
   date: string;
   title: string;
@@ -8,7 +10,12 @@ type Project = {
 
 type ProjectTeamMember = {
   name: string;
-  role: string;
+  blurb: React.ReactNode;
+};
+
+type ProjectLinks = {
+  text: string;
+  url: string;
 };
 
 type ProjectMetadata = {
@@ -20,6 +27,7 @@ type ProjectMetadata = {
   features: string[];
   duration?: string;
   team?: ProjectTeamMember[];
+  links?: ProjectLinks[];
 };
 
 export type { Project, ProjectMetadata, ProjectTeamMember };

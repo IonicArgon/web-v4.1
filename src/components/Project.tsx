@@ -3,6 +3,7 @@ import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import { ChevronUp } from 'lucide-react';
 
+import AnimatedLink from '@/components/AnimatedLink';
 import type { ProjectMetadata } from '@/types/ProjectTypes';
 
 const Project: React.FC<{
@@ -36,13 +37,13 @@ const Project: React.FC<{
         </h2>
         {projectMetadata.titleImage && (
           <div className="flex flex-row justify-center mt-8">
-            <div className='relative w-full max-w-4xl h-96'>
-            <Image
-              src={projectMetadata.titleImage}
-              alt={projectMetadata.title}
-              fill={true}
-              objectFit='contain'
-            />
+            <div className="relative w-full max-w-4xl h-[600px]">
+              <Image
+                src={projectMetadata.titleImage}
+                alt={projectMetadata.title}
+                fill={true}
+                style={{ objectFit: 'contain' }}
+              />
             </div>
           </div>
         )}
@@ -80,7 +81,7 @@ const Project: React.FC<{
           )}
           <div className="flex flex-row space-x-2">
             <span className="font-bold mr-2">Features:</span>
-            <ul className="list-disc list-inside text-mountbatten-pink">
+            <ul className="list-disc list-inside text-rose-quartz">
               {projectMetadata.features.map((feature, index) => (
                 <li key={index}>{feature}</li>
               ))}
@@ -113,12 +114,7 @@ const Project: React.FC<{
                       />
                     </span>
                     {showTeamMemberData[teamMember.name] ? (
-                      <div>
-                        <p className="mt-2 text-sm text-mountbatten-pink">
-                          <span className="font-bold">Role:</span>{' '}
-                          {teamMember.role}
-                        </p>
-                      </div>
+                      <div className="mt-2">{teamMember.blurb}</div>
                     ) : null}
                   </li>
                 ))}
@@ -126,7 +122,19 @@ const Project: React.FC<{
             </div>
           )}
         </div>
-        <div className="mt-8">{children}</div>
+        {projectMetadata.links && (
+          <div className="flex flex-row space-x-2 mt-4">
+            <span className="font-bold">Links:</span>
+            <ul className="list-inside text-mountbatten-pink space-y-2">
+              {projectMetadata.links.map((link, index) => (
+                <li key={index}>
+                  <AnimatedLink href={link.url}>{link.text}</AnimatedLink>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+        <div className="mt-4">{children}</div>
       </div>
     </main>
   );
