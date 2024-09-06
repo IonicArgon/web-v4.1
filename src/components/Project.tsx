@@ -37,7 +37,10 @@ const Project: React.FC<{
         </h2>
         {projectMetadata.titleImage && (
           <div className="flex flex-row justify-center mt-8">
-            <div className="relative w-full max-w-4xl h-[600px]">
+            <div
+              className="relative w-full max-w-4xl"
+              style={{ padding: '40%' }}
+            >
               <Image
                 src={projectMetadata.titleImage}
                 alt={projectMetadata.title}

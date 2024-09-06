@@ -16,14 +16,15 @@ const ProjectsArray: Project[] = [
     title: 'VRC Season - Tipping Point',
     description:
       'Competition code for the 2021 - 2022 VRC season, "Tipping Point".',
-    tags: ['Robotics', 'VEX Robotics', 'C++'],
+    tags: ['Robotics', 'VEX Robotics', 'C++', 'Design', 'CADing'],
     path: '/projects/vrc-21-22',
   },
   {
     date: '2021-09-25',
     title: 'VRC Season - Change Up',
-    description: 'Competition code for the 2020 - 2021 VRC season, "Change Up".',
-    tags: ['Robotics', 'VEX Robotics', 'C++'],
+    description:
+      'Competition code for the 2020 - 2021 VRC season, "Change Up".',
+    tags: ['Robotics', 'VEX Robotics', 'C++', 'Design', 'CADing'],
     path: '/projects/vrc-20-21',
   },
   {
