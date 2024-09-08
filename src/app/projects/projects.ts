@@ -45,7 +45,7 @@ const ProjectsArray: Project[] = [
   },
   {
     date: '2024-01-01',
-    title: 'Password Manager in Rust',
+    title: 'rPassMan',
     description: 'Password manager implemented in Rust.',
     tags: ['Software Development', 'Rust'],
     path: '/projects/password-manager',

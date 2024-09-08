@@ -82,6 +82,7 @@ const Home = () => {
             alt="Linux Now!"
             width={88}
             height={31}
+            unoptimized
           />
           <Image
             src="/buttons/powered-cpp.gif"

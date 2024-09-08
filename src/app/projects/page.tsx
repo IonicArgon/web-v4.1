@@ -13,6 +13,9 @@ const Projects = () => {
     <main>
       <div id="projects" className="text-cream font-mono">
         <h1 className="text-4xl font-bold">Projects</h1>
+        <p className='mb-4'>
+          Here are some of the projects I&apos;ve made (at least, the ones that I think are cool).
+        </p>
         {ProjectsArray.sort(
           (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
         ).map((project, index) => (

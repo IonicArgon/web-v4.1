@@ -52,7 +52,7 @@ const Project: React.FC<{
         )}
         <h3 className="text-2xl font-bold mt-8 mb-4"># TL;DR</h3>
         <div id="project-metadata" className="flex flex-col space-y-2">
-          <div className="flex flex-row space-x-2">
+          <div className="flex flex-row flex-wrap space-x-2">
             <span className="font-bold">Focus:</span>
             {projectMetadata.focus.sort().map((focus, index) => (
               <span
@@ -84,7 +84,7 @@ const Project: React.FC<{
           )}
           <div className="flex flex-row space-x-2">
             <span className="font-bold mr-2">Features:</span>
-            <ul className="list-disc list-inside text-rose-quartz">
+            <ul className="list-disc list-outside pl-5 text-rose-quartz">
               {projectMetadata.features.map((feature, index) => (
                 <li key={index}>{feature}</li>
               ))}
