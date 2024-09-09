@@ -88,7 +88,7 @@ const ProjectVRC21 = () => {
           bang-bang control.
         </li>
         <li>
-          Wrote odometry code that tracks the global position of the robot.*
+          Wrote odometry code that tracks the global position of the robot. *
         </li>
         <li>
           Utilised the VEX Vision sensor for colour and object-based detection

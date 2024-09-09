@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import Link from 'next/link';
+
 import AnimatedLink from '@/components/AnimatedLink';
 
 const Home = () => {
@@ -71,12 +73,18 @@ const Home = () => {
             width={88}
             height={31}
           />
-          <Image
-            src="/buttons/e-hs.gif"
-            alt="Download Sburb!"
-            width={88}
-            height={31}
-          />
+          <a
+            href="https://www.homestuck.com/story/4718"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/buttons/e-hs.gif"
+              alt="Download Sburb!"
+              width={88}
+              height={31}
+            />
+          </a>
           <Image
             src="/buttons/linuxnow2.gif"
             alt="Linux Now!"

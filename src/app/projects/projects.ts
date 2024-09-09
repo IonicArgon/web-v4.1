@@ -37,11 +37,11 @@ const ProjectsArray: Project[] = [
   },
   {
     date: '2023-11-30',
-    title: 'Matrix Multiplication in C',
+    title: 'Matrix Solving in C',
     description:
-      'Implementation of Jacobi and Successive Over-Relaxation methods for matrix multiplication.',
+      'Implementation of Jacobi and Successive Over-Relaxation methods for matrix Solving.',
     tags: ['Software Development', 'C', 'Algorithms'],
-    path: '/projects/matrix-multiplication',
+    path: '/projects/matrix-solving',
   },
   {
     date: '2024-01-01',
