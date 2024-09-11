@@ -41,7 +41,7 @@ const ProjectsArray: Project[] = [
     description:
       'Implementation of Jacobi and Successive Over-Relaxation methods for solving linear systems.',
     tags: ['C', 'Algorithms', 'Numerical Methods'],
-    path: '/projects/matrix-solving',
+    path: '/projects/linear-systems',
   },
   {
     date: '2024-01-01',

@@ -5,15 +5,23 @@ import katex from 'katex';
 
 interface KatexMathProps {
   mathExp: string;
+  size?: 'sm' | 'md' | 'lg';
 }
 
-const hideKatexHTML = `
-  .hide-katex-html .katex-html {
-    display: none;
-  }
-`;
-const KatexMath: React.FC<KatexMathProps> = ({ mathExp }) => {
+const KatexMath: React.FC<KatexMathProps> = ({ mathExp, size }) => {
   const mathContainerRef = useRef<HTMLDivElement>(null);
+  const sizeCSS: string = (() => {
+    switch (size) {
+      case 'sm':
+        return 'text-2xl';
+      case 'md':
+        return 'text-3xl';
+      case 'lg':
+        return 'text-4xl';
+      default:
+        return 'text-2xl';
+    }
+  })();
 
   useEffect(() => {
     if (!mathContainerRef.current) return;
@@ -29,9 +37,10 @@ const KatexMath: React.FC<KatexMathProps> = ({ mathExp }) => {
   }, [mathExp, mathContainerRef]);
 
   return (
-    <div className='text-2xl font-bold flex justify-center text-center items-center'>
-      <style>{hideKatexHTML}</style>
-      <div className="hide-katex-html" ref={mathContainerRef}></div>
+    <div
+      className={`${sizeCSS} font-bold flex justify-center text-center items-center`}
+    >
+      <div ref={mathContainerRef}></div>
     </div>
   );
 };

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Marco Tan's personal website",
 };
 
-const ProjectVRC22 = () => {
+const GeneticAlgorithm = () => {
   return (
     <Project
       projectMetadata={{
@@ -26,7 +26,7 @@ const ProjectVRC22 = () => {
         links: [
           {
             text: 'GitHub',
-            url: 'https://github.com/IonicArgon/MT2MP3-GeneticAlgorithm',
+            url: 'https://github.com/IonicArgon/GeneticAlgorithm',
           },
         ],
       }}
@@ -171,4 +171,4 @@ const ProjectVRC22 = () => {
   );
 };
 
-export default ProjectVRC22;
+export default GeneticAlgorithm;

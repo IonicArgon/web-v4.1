@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: "Marco Tan's personal website",
 };
 
-const ProjectVRC22 = () => {
+const LinearSystems = () => {
   return (
     <Project
       projectMetadata={{
@@ -59,12 +59,76 @@ const ProjectVRC22 = () => {
         (geometric transformations), Markov chains, calculating stresses, and
         even in facial recognition (with eigenfaces).
       </p>
+      <div className="mb-4 relative w-full max-w-4xl h-[400px]">
+        <Image
+          src="/projects/linear-systems/linsys-fig1.png"
+          alt="BeeAble"
+          fill={true}
+          style={{ objectFit: 'contain' }}
+        />
+      </div>
+      <p className="text-sm text-mountbatten-pink mb-4">
+        (i won&apos;t even lie, these are kinda creepy)
+      </p>
 
       <h2 className="text-2xl font-bold"># Code and Features</h2>
-      <p className="mb-4">There were two methods I wanted to explore</p>
-      <KatexMath mathExp="\sqrt{a + b}" />
+      <p className="mb-4">
+        There were two methods I wanted to explore in particular, those being
+        the{' '}
+        <AnimatedLink href="https://en.wikipedia.org/wiki/Jacobi_method">
+          Jacobi method
+        </AnimatedLink>{' '}
+        and{' '}
+        <AnimatedLink href="https://en.wikipedia.org/wiki/Successive_over-relaxation">
+          Successive over-relaxation
+        </AnimatedLink>
+        . I chose these two methods in particular because they&apos;re both
+        methods of <em>relaxing</em> (solving for) the system, but the ways they
+        go about it allowed me to make a very interesting parallel between
+        linear system solvers and control theory.
+      </p>
+
+      <h3 className="text-xl font-bold">## Jacobi Method</h3>
+      <p className="mb-4">
+        The Jacobi method, as far as I understand, is the most basic way to
+        solve for some linear systems (the &quot;some&quot; is addressed later).
+        Starting with a more formal definition, we have some system:
+      </p>
+      <KatexMath mathExp="Ax = b" />
+      <p className="mb-4">
+        This system can be defined in terms of matrices, where <b>A</b> and{' '}
+        <em>b</em> are known to us, and we&apos;re trying to solve for x:
+      </p>
+      <KatexMath
+        mathExp={`A =
+        \\begin{bmatrix}
+          a_{11} & a_{12} & \\dots & a_{1n} \\\\
+          a_{21} & a_{22} & \\dots & a_{2n} \\\\
+          \\vdots & \\vdots & \\ddots & \\vdots \\\\
+          a_{n1} & a_{n2} & \\dots & a_{nn} \\\\
+        \\end{bmatrix},
+
+        \\mathbf{x} = 
+        \\begin{bmatrix}
+          x_{1} \\\\
+          x_{2} \\\\
+          \\vdots \\\\
+          x_{n}
+        \\end{bmatrix}, \\\\[10pt]
+
+        \\mathbf{b} = 
+        \\begin{bmatrix}
+          b_{1} \\\\
+          b_{2} \\\\
+          \\vdots \\\\
+          b_{n}
+        \\end{bmatrix}
+        `}
+      />
+
+      <h3 className="text-xl font-bold">## Successive Over-Relaxation</h3>
     </Project>
   );
 };
 
-export default ProjectVRC22;
+export default LinearSystems;

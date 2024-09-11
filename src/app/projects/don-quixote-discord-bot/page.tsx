@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Marco Tan's personal website",
 };
 
-const ProjectVRC22 = () => {
+const DonQuixote = () => {
   return (
     <Project
       projectMetadata={{
@@ -75,4 +75,4 @@ const ProjectVRC22 = () => {
   );
 };
 
-export default ProjectVRC22;
+export default DonQuixote;
