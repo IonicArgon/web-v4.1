@@ -32,22 +32,22 @@ const ProjectsArray: Project[] = [
     title: 'Genetic Algorithm in C',
     description:
       'Implementation of a genetic algorithm to optimize the Rastrigin function.',
-    tags: ['Software Development', 'C', 'Heuristic Optimization'],
+    tags: ['C', 'Heuristics', 'Algorithms'],
     path: '/projects/genetic-algorithm',
   },
   {
     date: '2023-11-30',
-    title: 'Matrix Solving in C',
+    title: 'Solving Linear Systems in C',
     description:
-      'Implementation of Jacobi and Successive Over-Relaxation methods for matrix Solving.',
-    tags: ['Software Development', 'C', 'Algorithms'],
+      'Implementation of Jacobi and Successive Over-Relaxation methods for solving linear systems.',
+    tags: ['C', 'Algorithms', 'Numerical Methods'],
     path: '/projects/matrix-solving',
   },
   {
     date: '2024-01-01',
     title: 'rPassMan',
     description: 'Password manager implemented in Rust.',
-    tags: ['Software Development', 'Rust'],
+    tags: ['Rust'],
     path: '/projects/password-manager',
   },
   {
@@ -55,20 +55,14 @@ const ProjectsArray: Project[] = [
     title: 'Dataset Curation Web App for Machine Learning',
     description:
       'Web app made for LocalStudent, Inc. for curating dispute model training data.',
-    tags: [
-      'Software Development',
-      'Web Development',
-      'TypeScript',
-      'Firebase',
-      'Next.js',
-    ],
+    tags: ['Web Development', 'TypeScript', 'Firebase', 'Next.js'],
     path: '/projects/dataset-curation-web-app',
   },
   {
     date: '2023-09-18',
     title: 'Don Quixote Discord Bot',
     description: 'Silly Discord bot based off Don Quixote from Limbus Company.',
-    tags: ['Software Development', 'Python', 'Pycord'],
+    tags: ['Python', 'Pycord'],
     path: '/projects/don-quixote-discord-bot',
   },
 ];

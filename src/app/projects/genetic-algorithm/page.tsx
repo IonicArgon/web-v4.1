@@ -32,20 +32,77 @@ const ProjectVRC22 = () => {
       }}
     >
       <p className="mb-4">
-        This was an implementation of a genetic algorithm in C written for the
-        MECHTRON 2MP3 course. This program takes in values from the command line
-        and computes the best solution to minimize the Rastrigin function, with
-        the option to enable and disable elitism.
+        This was an implementation of a genetic algorithm in C. This program
+        takes in values from the command line and computes the best solution to
+        minimize the Rastrigin function, with the option to enable and disable
+        elitism.
+      </p>
+
+      <h2 className="text-2xl font-bold"># Biology? In my bits and bytes?</h2>
+      <p className="text-sm text-mountbatten-pink mb-2">
+        (it&apos;s more likely than you think)
+      </p>
+      <p className="mb-4">
+        Heuristic methods are kind of magical if you think about it. You&apos;re
+        taking a complex problem, one that might have hundreds of thousands of
+        parameters, and approximating it to the point where you can say
+        &quot;Eh, close enough,&quot; and it just works. So, imagine how
+        awestruck I was when I found out that you <em>simulate evolution</em>{' '}
+        within a program to solve problems.
+      </p>
+      <p className="mb-4">
+        What really got me into this way of thinking was through the videos on
+        this{' '}
+        <AnimatedLink href="https://www.youtube.com/@PrimerBlobs/videos">
+          YouTube channel
+        </AnimatedLink>{' '}
+        (they make amazing visualizations). Take for example, this video showing
+        how simulated creatures can learn how to work together:
+      </p>
+      <div className="mb-4 flex content-center items-center justify-center">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/TZfh8hpJIxo?si=LvphTUDivZP2sDNp"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+        ></iframe>
+      </div>
+      <p className="text-sm text-mountbatten-pink mb-4">
+        (isn&apos;t that just awesome?)
+      </p>
+      <p className="mb-4">
+        It couldn&apos;t be <em>that</em> hard to implement my own evolutionary
+        algorithm, right?
       </p>
 
       <h2 className="text-2xl font-bold"># Code and Features</h2>
       <p className="mb-4">
-        I wish there was more to talk about for this project, but coursework
-        being coursework, there has to be a set of constraints so that
-        instructors and TAs know that a student can hit certain criteria.
-        I&apos;m still pretty happy about the end product, and it is a very cool
-        project, but I felt like there was so much more room for cool things.
-        That being said, here are the features:
+        The algorithm I decided to go for was a <b>genetic algorithm</b>. In a
+        nutshell, randomize a population, let them make &quot;children&quot;,
+        allow these individuals to mate and mutate and hopefully, after some
+        amount of generations, you&apos;re left with an answer that&quot;s just{' '}
+        <em>close enough</em>. To keep things simple for my first attempt at
+        this, I decided to optimize a well-known test function, the{' '}
+        <AnimatedLink href="https://en.wikipedia.org/wiki/Rastrigin_function">
+          Rastrigin function
+        </AnimatedLink>
+        , before I moved on to anything larger.
+      </p>
+      <div className="mb-4 relative w-full max-w-4xl h-[200px]">
+        <Image
+          src="/projects/genetic-algorithm/ga-fig1.png"
+          alt="Genetic algorithm, fig 1."
+          fill={true}
+          style={{ objectFit: 'contain' }}
+        />
+      </div>
+      <p className="mb-4">
+        As for why I chose C as the language, some of the courses I was taken
+        were already using C and I didn&apos;t feel like swapping between
+        languages for projects, so it made sense to settle on that.
+        Nevertheless, here are the features.
       </p>
       <ul className="list-disc list-outside ml-5 mb-2">
         <li>
@@ -77,22 +134,6 @@ const ProjectVRC22 = () => {
         individuals. The idea is that by keeping the fittest alive, any further
         children will most likely be fit, as well.
       </p>
-      <div className="mb-4 relative w-full max-w-4xl h-[200px]">
-        <Image
-          src="/projects/genetic-algorithm/ga-fig1.png"
-          alt="Genetic algorithm, fig 1."
-          fill={true}
-          style={{ objectFit: 'contain' }}
-        />
-      </div>
-      <div className="mb-4 relative w-full max-w-4xl h-[200px]">
-        <Image
-          src="/projects/genetic-algorithm/ga-fig2.png"
-          alt="Genetic algorithm, fig 2."
-          fill={true}
-          style={{ objectFit: 'contain' }}
-        />
-      </div>
       <p className="mb-4">
         However, this was not actually the case, and it turns out here that
         counterintuitively, elitism was worse than the genetic algorithm by
