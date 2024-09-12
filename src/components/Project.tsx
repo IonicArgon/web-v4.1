@@ -14,19 +14,19 @@ const Project: React.FC<{
     Record<string, boolean>
   >({});
 
-  const populateTeamMemberData = () => {
-    if (projectMetadata.team) {
-      const newShowTeamMemberData: Record<string, boolean> = {};
-      projectMetadata.team.forEach((teamMember) => {
-        newShowTeamMemberData[teamMember.name] = false;
-      });
-      setShowTeamMemberData(newShowTeamMemberData);
-    }
-  };
-
   useEffect(() => {
+    const populateTeamMemberData = () => {
+      if (projectMetadata.team) {
+        const newShowTeamMemberData: Record<string, boolean> = {};
+        projectMetadata.team.forEach((teamMember) => {
+          newShowTeamMemberData[teamMember.name] = false;
+        });
+        setShowTeamMemberData(newShowTeamMemberData);
+      }
+    };
+
     populateTeamMemberData();
-  }, []);
+  }, [projectMetadata]);
 
   return (
     <main>
