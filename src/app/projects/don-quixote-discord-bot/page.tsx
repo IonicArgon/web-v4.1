@@ -5,8 +5,9 @@ import Project from '@/components/Project';
 import AnimatedLink from '@/components/AnimatedLink';
 
 export const metadata: Metadata = {
-  title: 'VRC Season - Tipping Point | IonicArgon',
-  description: "Marco Tan's personal website",
+  title: 'Don Quixote Discord Bot',
+  description: "Marco Tan's post about this silly little Discord creature.",
+  keywords: ['Discord', 'Discord bot', 'Bot', 'Don Quixote', 'Limbus Company'],
 };
 
 const DonQuixote = () => {

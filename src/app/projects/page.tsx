@@ -4,8 +4,8 @@ import { ProjectsArray } from '@/app/projects/projects';
 import AnimatedLink from '@/components/AnimatedLink';
 
 export const metadata: Metadata = {
-  title: 'Projects | IonicArgon',
-  description: "Marco Tan's personal website",
+  title: 'Projects',
+  description: "Some of Marco Tan's projects.",
 };
 
 const Projects = () => {

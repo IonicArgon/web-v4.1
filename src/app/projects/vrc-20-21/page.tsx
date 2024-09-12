@@ -5,8 +5,17 @@ import Project from '@/components/Project';
 import AnimatedLink from '@/components/AnimatedLink';
 
 export const metadata: Metadata = {
-  title: 'VRC Season - Change Up | IonicArgon',
-  description: "Marco Tan's personal website",
+  title: 'VRC Season - Change Up',
+  description: 'Marco Tan\'s post about the VEX VRC season, "Change Up."',
+  keywords: [
+    'VEX',
+    'VEX Robotics',
+    'VEX VRC',
+    'VRC Tipping Point',
+    'Tipping Point',
+    'C++',
+    'Robotics',
+  ],
 };
 
 const ProjectVRC21 = () => {

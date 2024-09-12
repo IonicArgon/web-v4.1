@@ -5,8 +5,9 @@ import Project from '@/components/Project';
 import AnimatedLink from '@/components/AnimatedLink';
 
 export const metadata: Metadata = {
-  title: 'Genetic Algorithm in C | IonicArgon',
-  description: "Marco Tan's personal website",
+  title: 'Genetic Algorithm in C',
+  description: "Marco Tan's post about a genetic algorithm written in C.",
+  keywords: ['C', 'Genetic algorithm', 'Heuristics', 'Algorithms'],
 };
 
 const GeneticAlgorithm = () => {

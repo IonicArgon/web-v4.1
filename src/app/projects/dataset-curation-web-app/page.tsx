@@ -5,8 +5,17 @@ import Project from '@/components/Project';
 import AnimatedLink from '@/components/AnimatedLink';
 
 export const metadata: Metadata = {
-  title: 'Dataset Curation Web App for Machine Learning | IonicArgon',
-  description: "Marco Tan's personal website",
+  title: 'Dataset Curation Web App for Machine Learning',
+  description:
+    "Marco Tan's post about the dataset curation web app he made for LocalStudent, Inc.",
+  keywords: [
+    'Machine learning',
+    'Dataset curation',
+    'LocalStudent',
+    'Web Development',
+    'NextJS',
+    'Firebase',
+  ],
 };
 
 const ProjectVRC22 = () => {

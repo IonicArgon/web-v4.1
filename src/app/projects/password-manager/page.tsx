@@ -5,8 +5,9 @@ import Project from '@/components/Project';
 import AnimatedLink from '@/components/AnimatedLink';
 
 export const metadata: Metadata = {
-  title: 'rPassMan | IonicArgon',
-  description: "Marco Tan's personal website",
+  title: 'rPassMan',
+  description: "Marco Tan's post about the password manager in Rust he made.",
+  keywords: ['Rust', 'Password manager', 'Project'],
 };
 
 const ProjectVRC22 = () => {

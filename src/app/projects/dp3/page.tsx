@@ -4,8 +4,17 @@ import { Metadata } from 'next';
 import Project from '@/components/Project';
 
 export const metadata: Metadata = {
-  title: 'Power Wheelchair Control System | IonicArgon',
-  description: "Marco Tan's personal website",
+  title: 'Power Wheelchair Control System',
+  description:
+    "Marco Tan's post about the power wheelchair control system he helped to develop.",
+  keywords: [
+    'Python',
+    'Raspberry Pi',
+    'Accessibility',
+    'Electromechanical systems',
+    'iBioMed',
+    'Design project',
+  ],
 };
 
 const ProjectDP3 = () => {
@@ -16,7 +25,11 @@ const ProjectDP3 = () => {
         shortDescription:
           'Gesture-based control system for power wheelchair users with partial paralysis.',
         titleImage: '/projects/dp3/dp3-fig1.png',
-        focus: ['Software Development', 'Accessibility'],
+        focus: [
+          'Software Development',
+          'Electromechanical Systems',
+          'Accessibility',
+        ],
         stack: ['Python', 'Raspberry Pi'],
         features: [
           'Sensor filtering and smoothing',

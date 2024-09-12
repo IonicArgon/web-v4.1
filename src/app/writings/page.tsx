@@ -2,8 +2,8 @@ import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Writings | IonicArgon',
-  description: "Marco Tan's personal website",
+  title: 'Writings',
+  description: "Some of Marco Tan's personal writings.",
 };
 
 const Writings = async () => {

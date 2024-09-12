@@ -6,8 +6,17 @@ import AnimatedLink from '@/components/AnimatedLink';
 import KatexMath from '@/components/KatexMath';
 
 export const metadata: Metadata = {
-  title: 'Matrix Solving in C | IonicArgon',
-  description: "Marco Tan's personal website",
+  title: 'Solving Linear Systems in C',
+  description: "Marco Tan's post about solving linear systems in C.",
+  keywords: [
+    'C',
+    'Project',
+    'Linear systems',
+    'Jacobi method',
+    'Successive over-relaxation',
+    'Numerical methods',
+    'algorithms',
+  ],
 };
 
 const LinearSystems = () => {
@@ -264,15 +273,30 @@ const LinearSystems = () => {
         it surprisingly improved the performance of the Jacobi method.
       </p>
 
-      <h2 className='text-2xl font-bold'># Reflection</h2>
-      <p className='mb-4'>
-        I think the biggest lesson from this project was when I was hit with sheer disappointment when I discovered that my code was <b>abysmally slow</b>. For relatively small systems, the code works just fine, but it scales horribly for some of the larger Matrix Market matrices you can find online.
+      <h2 className="text-2xl font-bold"># Reflection</h2>
+      <p className="mb-4">
+        I think the biggest lesson from this project was when I was hit with
+        sheer disappointment when I discovered that my code was{' '}
+        <b>abysmally slow</b>. For relatively small systems, the code works just
+        fine, but it scales horribly for some of the larger Matrix Market
+        matrices you can find online.
       </p>
-      <p className='mb-4'>
-        I did a profile of my code to see what it was that was slowing everything down, and the issue was in my implementation of the matrix-vector multiplication operation. The implementation has a time complexity of <KatexMath mathExp='\Omicron(n^2)' inline={true} />, which would never scale to the kind of systems I wanted to compute.
+      <p className="mb-4">
+        I did a profile of my code to see what it was that was slowing
+        everything down, and the issue was in my implementation of the
+        matrix-vector multiplication operation. The implementation has a time
+        complexity of <KatexMath mathExp="\Omicron(n^2)" inline={true} />, which
+        would never scale to the kind of systems I wanted to compute.
       </p>
-      <p className='mb-4'>
-        The lesson here is that <b>going into things without a plan does&apos;t always work</b>. Had I gone into this with some kind of a plan and an understanding of how I would reduce the time complexity of my code, maybe I could&apos;ve produced a more functional version of this program. Obviously, that doesn&apos;t mean I should develop every little script I write using Agile or a waterfall model, but at the very least, I should go into larger projects with some kind of plan of action.
+      <p className="mb-4">
+        The lesson here is that{' '}
+        <b>going into things without a plan does&apos;t always work</b>. Had I
+        gone into this with some kind of a plan and an understanding of how I
+        would reduce the time complexity of my code, maybe I could&apos;ve
+        produced a more functional version of this program. Obviously, that
+        doesn&apos;t mean I should develop every little script I write using
+        Agile or a waterfall model, but at the very least, I should go into
+        larger projects with some kind of plan of action.
       </p>
     </Project>
   );

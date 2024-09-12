@@ -3,8 +3,8 @@ import { Metadata } from 'next';
 import AnimatedLink from '@/components/AnimatedLink';
 
 export const metadata: Metadata = {
-  title: 'About | IonicArgon',
-  description: "Marco Tan's personal website",
+  title: 'About',
+  description: 'A little bit more about Marco Tan.',
 };
 
 const About = () => {
