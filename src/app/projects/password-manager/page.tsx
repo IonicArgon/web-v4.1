@@ -10,12 +10,13 @@ export const metadata: Metadata = {
   keywords: ['Rust', 'Password manager', 'Project'],
 };
 
-const ProjectVRC22 = () => {
+const rPassMan = () => {
   return (
     <Project
       projectMetadata={{
         title: 'rPassMan',
         shortDescription: 'A CLI-based password manager written in Rust.',
+        titleImage: '/projects/rpassman/rpm-fig1.png',
         focus: ['Software Development', 'Security'],
         stack: ['Rust'],
         features: [
@@ -31,9 +32,11 @@ const ProjectVRC22 = () => {
         ],
       }}
     >
-      <p className="mb-4">TBD.</p>
+      <p className="mb-4">
+        This was my first attempt at creating an actual project with Rust. It&apos;s a simple password manager that allows you to perform CRUD operations on an arbitrary number of entries with an arbitrary number of fields. Passwords are encrypted with argon2 and the encryption key is derived from the master password with a different salt. I attempted to shield data stored in memory, as well.
+      </p>
     </Project>
   );
 };
 
-export default ProjectVRC22;
+export default rPassMan;

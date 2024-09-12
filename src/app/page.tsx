@@ -92,6 +92,11 @@ const Home = () => {
             height={31}
             unoptimized
           />
+        </div>
+        <div
+          id="88x31-buttons"
+          className="flex justify-center items-center mt-4"
+        >
           <Image
             src="/buttons/powered-cpp.gif"
             alt="C++"
@@ -110,6 +115,18 @@ const Home = () => {
             width={88}
             height={31}
           />
+          <a 
+            href='https://youtu.be/TDpxx5UqrVU?t=535'
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            <Image 
+              src="/buttons/norton2.gif"
+              alt="protection."
+              width={88}
+              height={31}
+            />
+          </a>
         </div>
       </div>
     </main>
