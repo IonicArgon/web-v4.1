@@ -6,7 +6,7 @@ export function middleware(req: NextRequest, res: NextResponse) {
     'Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini'
   );
 
-  const isMobile = userAgent ? (() => (mobileAgents.test(userAgent)))() : true;
+  const isMobile = userAgent ? (() => mobileAgents.test(userAgent))() : true;
 
   if (isMobile) {
     return NextResponse.rewrite(new URL('/mobile-message', req.url));

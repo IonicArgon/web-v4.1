@@ -37,15 +37,9 @@ export default function RootLayout({
         ></link>
       </head>
       <body className="min-w-[100%] min-h-[100%] bg-dark-purple">
-        <noscript>
-          <div className="font-mono text-3xl text-cream">
-            JavaScript is disabled. Please enable it to view the full site.
-          </div>
-        </noscript>
-
         <div className="mx-auto max-w-prose">
           <Breadcrumbs />
-          <div id="children-container" className="pt-4">
+          <div id="root" className="pt-4">
             {children}
           </div>
           <div
