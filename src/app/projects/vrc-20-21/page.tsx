@@ -237,7 +237,7 @@ const ProjectVRC21 = () => {
         system will be extremely limited in capabilities.
       </p>
 
-      <h2 className="text-2xl font-bold"># Final Takeaways</h2>
+      <h2 className="text-2xl font-bold"># Reflection</h2>
       <p className="mb-4">
         Despite the challenges involved with this year&apos;s game, this was
         still one of my most favourite experiences I&apos;ve had; I can more or

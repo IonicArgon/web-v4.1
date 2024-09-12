@@ -120,7 +120,7 @@ const GeneticAlgorithm = () => {
         <li>Computes the wall clock time spent computing the solution.</li>
       </ul>
 
-      <h2 className="text-2xl font-bold"># Final Takeaways</h2>
+      <h2 className="text-2xl font-bold"># Reflection</h2>
       <p className="mb-4">
         There were two pretty big takeaways from this, despite being your usual
         college project.

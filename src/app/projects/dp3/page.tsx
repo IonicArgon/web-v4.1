@@ -142,7 +142,7 @@ const ProjectDP3 = () => {
         more nuanced control and better adaptability to the user&apos;s needs.
       </p>
 
-      <h2 className="text-2xl font-bold"># Final Takeaways</h2>
+      <h2 className="text-2xl font-bold"># Reflection</h2>
       <p className="mb-4">
         Of every design project I&apos;ve done in my first year, this one was by
         far the most interesting and rewarding. The open-ended nature of the

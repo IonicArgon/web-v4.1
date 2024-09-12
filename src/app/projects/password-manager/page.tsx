@@ -30,7 +30,7 @@ const ProjectVRC22 = () => {
         ],
       }}
     >
-      <p className="mb-4">test,</p>
+      <p className="mb-4">TBD.</p>
     </Project>
   );
 };

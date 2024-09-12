@@ -6,20 +6,21 @@ import katex from 'katex';
 interface KatexMathProps {
   mathExp: string;
   size?: 'sm' | 'md' | 'lg';
+  inline?: boolean;
 }
 
-const KatexMath: React.FC<KatexMathProps> = ({ mathExp, size }) => {
-  const mathContainerRef = useRef<HTMLDivElement>(null);
+const KatexMath: React.FC<KatexMathProps> = ({ mathExp, size, inline }) => {
+  const mathContainerRef = useRef<HTMLSpanElement>(null);
   const sizeCSS: string = (() => {
     switch (size) {
       case 'sm':
-        return 'text-2xl';
+        return 'text-xl';
       case 'md':
-        return 'text-3xl';
-      case 'lg':
-        return 'text-4xl';
-      default:
         return 'text-2xl';
+      case 'lg':
+        return 'text-3xl';
+      default:
+        return 'text-xl';
     }
   })();
 
@@ -36,11 +37,15 @@ const KatexMath: React.FC<KatexMathProps> = ({ mathExp, size }) => {
     }
   }, [mathExp, mathContainerRef]);
 
-  return (
+  return inline ? (
+    <span className="font-bold">
+      <span ref={mathContainerRef}></span>
+    </span>
+  ) : (
     <div
-      className={`${sizeCSS} font-bold flex justify-center text-center items-center`}
+      className={`${sizeCSS} font-bold flex justify-center text-center items-center mb-4`}
     >
-      <div ref={mathContainerRef}></div>
+      <span ref={mathContainerRef}></span>
     </div>
   );
 };
