@@ -33,7 +33,12 @@ const rPassMan = () => {
       }}
     >
       <p className="mb-4">
-        This was my first attempt at creating an actual project with Rust. It&apos;s a simple password manager that allows you to perform CRUD operations on an arbitrary number of entries with an arbitrary number of fields. Passwords are encrypted with argon2 and the encryption key is derived from the master password with a different salt. I attempted to shield data stored in memory, as well.
+        This was my first attempt at creating an actual project with Rust.
+        It&apos;s a simple password manager that allows you to perform CRUD
+        operations on an arbitrary number of entries with an arbitrary number of
+        fields. Passwords are encrypted with argon2 and the encryption key is
+        derived from the master password with a different salt. I attempted to
+        shield data stored in memory, as well.
       </p>
     </Project>
   );

@@ -36,7 +36,7 @@ const ProjectVRC22 = () => {
         ],
       }}
     >
-      <p className="mb-4">TBD</p>
+      <p className="mb-4">This is something that I&apos;m still working on.</p>
     </Project>
   );
 };

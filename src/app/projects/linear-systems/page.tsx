@@ -36,7 +36,7 @@ const LinearSystems = () => {
         links: [
           {
             text: 'GitHub',
-            url: 'https://github.com/IonicArgon/MT2MP3-MatrixSolver',
+            url: 'https://github.com/IonicArgon/LinearSystems',
           },
         ],
       }}

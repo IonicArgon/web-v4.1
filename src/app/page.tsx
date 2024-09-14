@@ -115,12 +115,12 @@ const Home = () => {
             width={88}
             height={31}
           />
-          <a 
-            href='https://youtu.be/TDpxx5UqrVU?t=535'
-            target='_blank'
-            rel='noreferrer noopener'
+          <a
+            href="https://youtu.be/TDpxx5UqrVU?t=535"
+            target="_blank"
+            rel="noreferrer noopener"
           >
-            <Image 
+            <Image
               src="/buttons/norton2.gif"
               alt="protection."
               width={88}
