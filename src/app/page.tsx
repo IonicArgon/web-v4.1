@@ -8,7 +8,7 @@ const Home = () => {
     <main>
       <div
         id="title"
-        className="flex justify-center items-center text-7xl text-cream"
+        className="flex justify-center items-center text-7xl text-cream mt-20"
       >
         <div className="font-light">Marco</div>
         <div className="font-bold">Tan</div>
