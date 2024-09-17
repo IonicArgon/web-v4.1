@@ -6,16 +6,16 @@ import { Rss } from 'lucide-react';
 import fetchMOTD from '@/server/MOTDFetch';
 
 const MOTD: React.FC = () => {
-  const [motd, setMotd] = useState<string | null>(null);
-  const [date, setDate] = useState<string | null>(null);
+  const [motd, setMotd] = useState<string | 'loading' | null>('loading');
+  const [date, setDate] = useState<string | 'loading' | null>('loading');
   const motdRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const callFetchMOTD = async () => {
       const response = await fetchMOTD();
       if (!response.err) {
-        setMotd(response.motd);
-        setDate(response.date);
+        setMotd(response.motd as string);
+        setDate(response.date as string);
       } else {
         setMotd(null);
         setDate(null);
@@ -53,10 +53,10 @@ const MOTD: React.FC = () => {
         &gt; Message of the Day
       </h3>
       <div className="flex flex-col" ref={motdRef}>
-        {processMotd(motd as string)}
+        {motd !== 'loading' && processMotd(motd as string)}
       </div>
       <div className='text-sm text-mountbatten-pink'>
-        ({date})
+        {date !== 'loading' && (date)}
       </div>
     </div>
   );
