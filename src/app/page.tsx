@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import MOTD from '@/components/MOTD';
 import AnimatedLink from '@/components/AnimatedLink';
 
 const Home = () => {
@@ -19,6 +20,8 @@ const Home = () => {
         <AnimatedLink href="/projects">projects</AnimatedLink>
         <AnimatedLink href="/writings">writings</AnimatedLink>
       </nav>
+
+      <MOTD />
 
       <div id="intro" className="text-cream font-mono mt-8">
         <h1 className="text-4xl font-bold"># Hi!</h1>
@@ -74,7 +77,7 @@ const Home = () => {
             height={31}
           />
           <a
-            href="https://www.homestuck.com/story/4718"
+            href="https://www.homestuck.com/story"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -88,6 +91,25 @@ const Home = () => {
           <Image
             src="/buttons/linuxnow2.gif"
             alt="Linux Now!"
+            width={88}
+            height={31}
+            unoptimized
+          />
+          <Image
+            src="/buttons/sucks.gif"
+            alt="Linux Now!"
+            width={88}
+            height={31}
+          />
+          <Image
+            src="/buttons/nocookie.gif"
+            alt="Certified cookie free!"
+            width={88}
+            height={31}
+          />
+          <Image
+            src="/buttons/saul.gif"
+            alt="Saul Goodman is sooo cute!"
             width={88}
             height={31}
             unoptimized
@@ -115,18 +137,32 @@ const Home = () => {
             width={88}
             height={31}
           />
+          <Image
+            src="/buttons/norton2.gif"
+            alt="protection."
+            width={88}
+            height={31}
+          />
+          <Image
+            src="/buttons/paywalls.gif"
+            alt="Paywalls gatekeep knowledge."
+            width={88}
+            height={31}
+            unoptimized
+          />
           <a
-            href="https://youtu.be/TDpxx5UqrVU?t=535"
+            href="https://www.youtube.com/watch?v=o-YBDTqX_ZU"
             target="_blank"
-            rel="noreferrer noopener"
+            rel="noopener noreferrer"
           >
-            <Image
-              src="/buttons/norton2.gif"
-              alt="protection."
-              width={88}
-              height={31}
-            />
+            <Image src="/buttons/no.gif" alt="silly." width={88} height={31} />
           </a>
+          <Image
+            src="/buttons/timetravel.png"
+            alt="Ban time travel now!"
+            width={88}
+            height={31}
+          />
         </div>
       </div>
     </main>
