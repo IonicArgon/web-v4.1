@@ -12,7 +12,7 @@ const About = () => {
     <main>
       <div id="about" className="text-cream font-mono">
         <h1 className="text-4xl font-bold">About</h1>
-        <span className="font-bold text-xl">Last Updated: 2024-09-16</span>
+        <span className="font-bold text-xl">Last Updated: 2024-09-24</span>
         <p className="mt-4">
           Just some more information about me, links, and other miscellaneous
           things.
@@ -38,7 +38,7 @@ const About = () => {
         <span className="mt-4 font-bold">Download:</span>{' '}
         <AnimatedLink href="/resume.pdf">resume.pdf</AnimatedLink>{' '}
         <span className="text-sm text-mountbatten-pink">
-          (last updated 2024-09-16)
+          (last updated 2024-09-24)
         </span>
         <h2 className="text-2xl font-bold mt-8">## Software</h2>
         <p className="mt-4">
