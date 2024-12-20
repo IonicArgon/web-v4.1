@@ -1,5 +1,7 @@
-import Image from 'next/image';
 import { Metadata } from 'next';
+import { WritingsArray } from '@/app/writings/writings';
+
+import AnimatedLink from '@/components/AnimatedLink';
 
 export const metadata: Metadata = {
   title: 'Writings',
@@ -7,27 +9,38 @@ export const metadata: Metadata = {
 };
 
 const Writings = async () => {
-  const catResponse = await fetch(
-    'https://api.thecatapi.com/v1/images/search',
-    {
-      cache: 'no-store',
-    }
-  );
-  const catData = await catResponse.json();
-  const catUrl = await catData[0].url;
-
   return (
     <main>
-      <div id="projects" className="text-cream font-mono">
+      <div id="writings" className="text-cream font-mono">
         <h1 className="text-4xl font-bold">Writings</h1>
         <p className="mb-4">
-          This is hopefully where I&apos;ll put some of my writings.
-          Unfortunately, I don&apos;t have too many to share here, so have a cat
-          image instead:
+          Here are some of my personal writings. Maybe you&apos;ll find some of
+          my ramblings interesting.
         </p>
-        <div className="flex justify-center items-center mt-4">
-          <Image src={catUrl} alt="A cat" width={400} height={400} />
-        </div>
+        {WritingsArray.sort(
+          (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+        ).map((writing, index) => (
+          <div key={index} className="mt-8">
+            <div className="flex text-lg">
+              <h2 className="font-light text-mountbatten-pink">
+                {writing.date}:
+              </h2>
+              &nbsp;
+              <AnimatedLink href={writing.path}>{writing.title}</AnimatedLink>
+            </div>
+            <p className="mt-1 text-rose-quartz">{writing.description}</p>
+            <div className="mt-1 flex space-x-2">
+              {writing.tags.sort().map((tag, index) => (
+                <span
+                  key={index}
+                  className="text-sm flex items-center text-center justify-center text-dark-purple bg-rose-quartz py-1 px-2 rounded-sm leading-none"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </main>
   );

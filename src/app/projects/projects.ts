@@ -65,6 +65,19 @@ const ProjectsArray: Project[] = [
     tags: ['Python', 'Pycord'],
     path: '/projects/don-quixote-discord-bot',
   },
+  {
+    date: '2024-11-28',
+    title: 'HeartFlow Pacemaker System',
+    description: 'Pacemaker firmware and programmer.',
+    tags: [
+      'Biomedical Engineering',
+      'Electron',
+      'Simulink',
+      'Python',
+      'Safety Engineering',
+    ],
+    path: '/projects/heartflow-pacemaker',
+  },
 ];
 
 export { ProjectsArray };
