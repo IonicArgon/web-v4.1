@@ -12,19 +12,17 @@ interface CodeBlockProps {
 
 const CodeBlock: React.FC<CodeBlockProps> = ({ code, language, height }) => {
   return (
-    <div className="overflow-hidden rounded-lg shadow-lg">
+    <div className="overflow-hidden rounded-lg shadow-lg mb-6">
       <div
-        className={`relative overflow-auto ${height} scrollbar-thin scrollbar-track-mountbatten-pink scrollbar-thumb-rose-quartz`}
+        className={`relative overflow-auto ${height} scrollbar-thin scrollbar-track-mountbatten-pink scrollbar-thumb-rose-quartz bg-[#1d1f21]`}
       >
         <SyntaxHighlighter
           language={language}
           style={atomDark}
           showLineNumbers
-          codeTagProps={{
-            style: { padding: 0 },
-          }}
           customStyle={{
             margin: 0,
+            overflow: 'unset',
           }}
         >
           {code}
