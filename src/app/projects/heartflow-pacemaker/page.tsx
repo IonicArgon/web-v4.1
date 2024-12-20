@@ -52,8 +52,9 @@ const HeartFlowPacemaker = () => {
           using Simulink.
         </li>
         <li>
-          A "device controller-monitor" (DCM) application for programming the
-          pacemaker. The stack we opted for was Electron, React, and Python.
+          A &ldquo;device controller-monitor&rdquo; (DCM) application for
+          programming the pacemaker. The stack we opted for was Electron, React,
+          and Python.
         </li>
       </ul>
 

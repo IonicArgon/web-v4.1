@@ -20,9 +20,7 @@ const AoC2024Day1 = () => {
         tags: ['Advent of Code', 'C++'],
       }}
     >
-      <p className="mb-4">
-        test
-      </p>
+      <p className="mb-4">test</p>
     </Writing>
   );
 };
