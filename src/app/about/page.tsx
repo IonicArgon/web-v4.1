@@ -5,6 +5,9 @@ import AnimatedLink from '@/components/AnimatedLink';
 export const metadata: Metadata = {
   title: 'About',
   description: 'A little bit more about Marco Tan.',
+  alternates: {
+    canonical: 'https://ionicargon.ca/about',
+  },
 };
 
 const About = () => {

@@ -14,6 +14,9 @@ export const metadata: Metadata = {
     'Python',
     'Simulink',
   ],
+  alternates: {
+    canonical: 'https://ionicargon.ca/projects/heartflow-pacemaker',
+  },
 };
 
 const HeartFlowPacemaker = () => {

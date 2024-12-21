@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'rPassMan',
   description: "Marco Tan's post about the password manager in Rust he made.",
   keywords: ['Rust', 'Password manager', 'Project'],
+  alternates: {
+    canonical: 'https://ionicargon.ca/projects/password-manager',
+  },
 };
 
 const rPassMan = () => {

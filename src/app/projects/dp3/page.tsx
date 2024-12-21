@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     'iBioMed',
     'Design project',
   ],
+  alternates: {
+    canonical: 'https://ionicargon.ca/projects/dp3',
+  },
 };
 
 const ProjectDP3 = () => {

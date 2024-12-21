@@ -6,6 +6,10 @@ import AnimatedLink from '@/components/AnimatedLink';
 export const metadata: Metadata = {
   title: 'Projects',
   description: "Some of Marco Tan's projects.",
+  keywords: ['Projects', 'Portfolio', 'Software Development'],
+  alternates: {
+    canonical: 'https://ionicargon.ca/projects',
+  },
 };
 
 const Projects = () => {

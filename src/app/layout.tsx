@@ -1,10 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import dynamic from 'next/dynamic';
 
-const Breadcrumbs = dynamic(() => import('../components/Breadcrumbs'), {
-  ssr: false,
-});
+import ClientLayout from '@/components/ClientLayout';
 
 export const metadata: Metadata = {
   title: {
@@ -12,13 +9,12 @@ export const metadata: Metadata = {
     default: 'IonicArgon',
   },
   description: "Homepage of Marco Tan's personal website.",
-  robots: {
-    index: true,
-    follow: true,
-  },
   creator: 'Marco Tan',
   category: 'portfolio',
   keywords: ['Portfolio', 'Marco', 'Tan', 'Marco Tan', 'Personal website'],
+  alternates: {
+    canonical: 'https://ionicargon.ca',
+  },
 };
 
 export default function RootLayout({
@@ -27,7 +23,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className="scrollbar-thin scrollbar-track-mountbatten-pink scrollbar-thumb-rose-quartz"
+    >
       <head>
         <link
           rel="stylesheet"
@@ -36,20 +35,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         ></link>
       </head>
-      <body className="min-w-[100%] min-h-[100%] bg-dark-purple">
-        <div className="mx-auto max-w-prose">
-          <Breadcrumbs />
-          <div id="root" className="pt-4">
-            {children}
-          </div>
-          <div
-            id="copyright"
-            className="pt-10 mb-4 font-mono font-bold text-xl text-cream"
-          >
-            &copy; {new Date().getFullYear()} IONICARGON
-          </div>
-        </div>
-      </body>
+      <ClientLayout>{children}</ClientLayout>
     </html>
   );
 }

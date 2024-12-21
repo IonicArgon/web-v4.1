@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     'NextJS',
     'Firebase',
   ],
+  alternates: {
+    canonical: 'https://ionicargon.ca/projects/dataset-curation-web-app',
+  },
 };
 
 const ProjectVRC22 = () => {
