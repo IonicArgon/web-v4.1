@@ -15,7 +15,7 @@ const ClientLayout: React.FC<{ children: React.ReactNode }> = ({
         </div>
         <div
           id="copyright"
-          className="pt-10 font-mono font-bold text-xl text-cream"
+          className="pt-10 mb-4 font-mono font-bold text-md text-cream"
         >
           &copy; {new Date().getFullYear()} Marco Tan. All rights reserved.
         </div>
