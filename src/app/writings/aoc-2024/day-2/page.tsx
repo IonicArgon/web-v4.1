@@ -13,12 +13,12 @@ export const metadata: Metadata = {
   },
 };
 
-const AoC2024Day1 = () => {
+const AoC2024Day2 = () => {
   return (
     <Writing
       writingMetadata={{
         title: 'Advent of Code 2024 - Day 2',
-        shortDescription: 'test',
+        shortDescription: 'Red-Nosed Reports',
         date: 'Written December 21st, 2024 | Attempted December 4th, 2024',
         tags: ['Advent of Code', 'C++'],
       }}
@@ -90,4 +90,4 @@ const AoC2024Day1 = () => {
   );
 };
 
-export default AoC2024Day1;
+export default AoC2024Day2;

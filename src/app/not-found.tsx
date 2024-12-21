@@ -1,12 +1,7 @@
 import Image from 'next/image';
 
 const NotFound = async () => {
-  const catResponse = await fetch(
-    'https://api.thecatapi.com/v1/images/search',
-    {
-      cache: 'no-store',
-    }
-  );
+  const catResponse = await fetch('https://api.thecatapi.com/v1/images/search');
   const catData = await catResponse.json();
   const catUrl = catData[0].url;
 
