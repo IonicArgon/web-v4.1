@@ -1,9 +1,0 @@
-{
-  "redirects": [
-    {
-      "source": "/:path*",
-      "destination": "https://ionicargon.ca/:path*",
-      "permanent": true
-    }
-  ]
-}

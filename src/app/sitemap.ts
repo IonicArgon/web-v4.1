@@ -24,13 +24,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const projectRoutes = projectPages.map((page) => ({
     url: `https://ionicargon.ca/projects/${page}`,
     lastModified: new Date().toISOString(),
-    changeFrequency: 'monthly',
+    changeFrequency: 'monthly' as const,
     priority: 0.6,
   }));
   const writingRoutes = writingPages.map((page) => ({
     url: `https://ionicargon.ca/writing/${page}`,
     lastModified: new Date().toISOString(),
-    changeFrequency: 'monthly',
+    changeFrequency: 'monthly' as const,
     priority: 0.6,
   }));
 
@@ -38,19 +38,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: 'https://ionicargon.ca',
       lastModified: new Date().toISOString(),
-      changeFrequency: 'monthly',
+      changeFrequency: 'monthly' as const,
       priority: 1.0,
     },
     {
       url: 'https://ionicargon.ca/projects',
       lastModified: new Date().toISOString(),
-      changeFrequency: 'monthly',
+      changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
     {
       url: 'https://ionicargon.ca/writing',
       lastModified: new Date().toISOString(),
-      changeFrequency: 'monthly',
+      changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
     ...projectRoutes,
