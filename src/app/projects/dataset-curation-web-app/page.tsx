@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     'Firebase',
   ],
   alternates: {
-    canonical: 'https://ionicargon.ca/projects/dataset-curation-web-app',
+    canonical: 'https://www.ionicargon.ca/projects/dataset-curation-web-app',
   },
 };
 

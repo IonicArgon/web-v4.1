@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "Some of Marco Tan's personal writings.",
   keywords: ['Writings', 'Blog', 'Personal'],
   alternates: {
-    canonical: 'https://ionicargon.ca/writings',
+    canonical: 'https://www.ionicargon.ca/writings',
   },
 };
 

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Marco Tan's post about a genetic algorithm written in C.",
   keywords: ['C', 'Genetic algorithm', 'Heuristics', 'Algorithms'],
   alternates: {
-    canonical: 'https://ionicargon.ca/projects/genetic-algorithm',
+    canonical: 'https://www.ionicargon.ca/projects/genetic-algorithm',
   },
 };
 

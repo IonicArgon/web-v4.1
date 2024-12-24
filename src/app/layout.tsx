@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   category: 'portfolio',
   keywords: ['Portfolio', 'Marco', 'Tan', 'Marco Tan', 'Personal website'],
   alternates: {
-    canonical: 'https://ionicargon.ca',
+    canonical: 'https://www.ionicargon.ca',
   },
 };
 

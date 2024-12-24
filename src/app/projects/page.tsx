@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "Some of Marco Tan's projects.",
   keywords: ['Projects', 'Portfolio', 'Software Development'],
   alternates: {
-    canonical: 'https://ionicargon.ca/projects',
+    canonical: 'https://www.ionicargon.ca/projects',
   },
 };
 

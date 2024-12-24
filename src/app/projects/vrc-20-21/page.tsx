@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     'Robotics',
   ],
   alternates: {
-    canonical: 'https://ionicargon.ca/projects/vrc-20-21',
+    canonical: 'https://www.ionicargon.ca/projects/vrc-20-21',
   },
 };
 

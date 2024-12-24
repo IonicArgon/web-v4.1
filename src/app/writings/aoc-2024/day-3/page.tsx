@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: "Marco Tan's Advent of Code 2024 Day 3 solution.",
   keywords: ['Advent of Code', 'Advent of Code 2024', 'C++'],
   alternates: {
-    canonical: 'https://ionicargon.ca/writings/aoc-2024/day-3',
+    canonical: 'https://www.ionicargon.ca/writings/aoc-2024/day-3',
   },
 };
 

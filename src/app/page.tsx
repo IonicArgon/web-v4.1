@@ -1,7 +1,6 @@
 import Image from 'next/image';
-import Link from 'next/link';
 
-import MOTD from '@/components/MOTD';
+import BSkyFeed from '@/components/BSkyFeed';
 import AnimatedLink from '@/components/AnimatedLink';
 
 const Home = () => {
@@ -21,7 +20,7 @@ const Home = () => {
         <AnimatedLink href="/writings">writings</AnimatedLink>
       </nav>
 
-      <MOTD />
+      <BSkyFeed />
 
       <div id="intro" className="text-cream font-mono mt-8">
         <h1 className="text-4xl font-bold"># Hi!</h1>

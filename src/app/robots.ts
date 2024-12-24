@@ -8,7 +8,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: 'https://ionicargon.ca/sitemap.xml',
-    host: 'https://ionicargon.ca',
+    sitemap: 'https://www.ionicargon.ca/sitemap.xml',
+    host: 'https://www.ionicargon.ca',
   };
 }

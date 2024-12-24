@@ -5,6 +5,12 @@ const nextConfig = {
       {
         hostname: '*.thecatapi.com',
       },
+      {
+        hostname: 'cdn.bsky.app',
+      },
+      {
+        hostname: '*.ionicargon.ca',
+      },
     ],
   },
 };

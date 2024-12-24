@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Marco Tan's post about this silly little Discord creature.",
   keywords: ['Discord', 'Discord bot', 'Bot', 'Don Quixote', 'Limbus Company'],
   alternates: {
-    canonical: 'https://ionicargon.ca/projects/don-quixote-discord-bot',
+    canonical: 'https://www.ionicargon.ca/projects/don-quixote-discord-bot',
   },
 };
 

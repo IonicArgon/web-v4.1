@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'About',
   description: 'A little bit more about Marco Tan.',
   alternates: {
-    canonical: 'https://ionicargon.ca/about',
+    canonical: 'https://www.ionicargon.ca/about',
   },
 };
 

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     'Design project',
   ],
   alternates: {
-    canonical: 'https://ionicargon.ca/projects/dp3',
+    canonical: 'https://www.ionicargon.ca/projects/dp3',
   },
 };
 

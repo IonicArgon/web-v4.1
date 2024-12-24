@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Marco Tan's post about the password manager in Rust he made.",
   keywords: ['Rust', 'Password manager', 'Project'],
   alternates: {
-    canonical: 'https://ionicargon.ca/projects/password-manager',
+    canonical: 'https://www.ionicargon.ca/projects/password-manager',
   },
 };
 

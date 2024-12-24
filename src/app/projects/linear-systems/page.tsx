@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     'algorithms',
   ],
   alternates: {
-    canonical: 'https://ionicargon.ca/projects/linear-systems',
+    canonical: 'https://www.ionicargon.ca/projects/linear-systems',
   },
 };
 
