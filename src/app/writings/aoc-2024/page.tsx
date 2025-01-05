@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
 import AnimatedLink from '@/components/AnimatedLink';
-import CodeBlock from '@/components/CodeBlock';
 
 import Writing from '@/components/Writing';
 

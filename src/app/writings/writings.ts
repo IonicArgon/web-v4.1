@@ -8,6 +8,14 @@ const WritingsArray: Writings[] = [
     tags: ['Advent of Code', 'C++'],
     path: '/writings/aoc-2024',
   },
+  {
+    date: '2025-01-04',
+    title: 'Self-Hosting an ATProto PDS w/ GCP and Twilio',
+    description:
+      'Write-up on how I self-hosted my own ATProto PDS using Google Cloud Platform and Twilio.',
+    tags: ['ATProto', 'Bluesky'],
+    path: '/writings/self-host-atproto',
+  },
 ];
 
 export { WritingsArray };
