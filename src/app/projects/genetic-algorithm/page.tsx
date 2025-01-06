@@ -130,7 +130,7 @@ const GeneticAlgorithm = () => {
         college project.
       </p>
 
-      <h3 className="text-xl font-bold">## Counterintuitive Results</h3>
+      <h3 className="text-xl font-bold">## Counter-intuitive Results</h3>
       <p className="mb-4">
         When I was looking for methods to improve my performance with the
         genetic algorithm, I came across elitism, a strategy to improve the
@@ -140,7 +140,7 @@ const GeneticAlgorithm = () => {
       </p>
       <p className="mb-4">
         However, this was not actually the case, and it turns out here that
-        counterintuitively, elitism was worse than the genetic algorithm by
+        counter-intuitively, elitism was worse than the genetic algorithm by
         itself. It would make sense that keeping the most fit individuals alive
         would create more fit offspring. What actually happens though is that by
         guaranteeing the survival of a select few individuals, you end up{' '}

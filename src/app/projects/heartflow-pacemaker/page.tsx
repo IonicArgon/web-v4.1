@@ -66,7 +66,7 @@ const HeartFlowPacemaker = () => {
         here because{' '}
         <b>
           this has been the biggest project I&apos;ve worked on since I&apos;ve
-          started proramming
+          started programming
         </b>{' '}
         (which is saying a lot since I started programming on Roblox when I was
         like, 11). I&apos;ll update this post soon with more details. In the

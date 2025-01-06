@@ -34,7 +34,7 @@ const LinearSystems = () => {
         features: [
           'Numerical solving of linear systems with the Jacobi method and Successive Over-Relaxation',
           'Input and output of CSR matrices',
-          'Preconditioners prepare matrices for numerical solving',
+          'Pre-conditioners prepare matrices for numerical solving',
         ],
         links: [
           {
@@ -254,22 +254,22 @@ const LinearSystems = () => {
         </li>
       </ul>
 
-      <h3 className="text-xl font-bold">## Preconditioners </h3>
+      <h3 className="text-xl font-bold">## Pre-conditioners </h3>
       <p className="mb-4">
         Using a different method is not the only way of increasing your chances
         of convergence. Since we know that the Jacobi method is guaranteed to
         converge given a strictly diagonally dominant matrix (for reasons that
         are beyond me, currently), we could try manipulating the matrix{' '}
-        <KatexMath mathExp="A" inline={true} /> using <em>preconditioners</em>{' '}
+        <KatexMath mathExp="A" inline={true} /> using <em>pre-conditioners</em>{' '}
         to try and create a system that minimizes oscillations and creates a
         structure more favourable to convergence.
       </p>
       <p className="mb-4">
-        Typically, a preconditioner is some matrix{' '}
+        Typically, a pre-conditioner is some matrix{' '}
         <KatexMath mathExp="P" inline={true} /> that is multiplied with{' '}
         <KatexMath mathExp="A" inline={true} /> to transform it in some way. I
         opted for a kinda messed up version of a permutation matrix-based
-        preconditioner where I check for strict diagonal dominance, and if the
+        pre-conditioner where I check for strict diagonal dominance, and if the
         coefficient matrix does not pass the test, I swap rows around until it
         does. The way I implemented didn&apos;t make use of a permutation matrix
         and instead was kinda poorly implemented with a bunch of for-loops, but
