@@ -170,13 +170,15 @@ const SelfHostATProto = () => {
         control who has access to it. Yes, I still use Google and Instagram and
         all those other platforms but that doesn&apos;t mean I can&apos;t be
         critical of their use of people&apos;s data and frankly if you subscribe
-        to that kind of ideology, I can&apos;t help you. I&apos;m not here to
-        change your mind, just to give you something to think about.
+        to that kind of ideology, please leave.
       </p>
 
       <h2 className="text-2xl font-bold mt-8">
         # Okay enough chit-chat, how do?
       </h2>
+      <p className='mb-4'>
+        
+      </p>
     </Writing>
   );
 };
