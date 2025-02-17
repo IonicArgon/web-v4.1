@@ -56,7 +56,7 @@ const SelfHostATProto = () => {
           because transparency is key for the next point, which is...
         </li>
         <li>
-          <strong>Decentralizion</strong>: Whereas most social networks like
+          <strong>Decentralization</strong>: Whereas most social networks like
           Facebook and Instagram are centralized (i.e. all the data is stored on
           servers owned by said companies), the AT Protocol is designed such
           that anyone can run their own server. You can have your own PDS that
@@ -64,8 +64,8 @@ const SelfHostATProto = () => {
           Furthermore, because the data storage is decoupled from a specific
           platform, it means all data is available regardless of the platform
           you use. Think of it like how email works; you might use Gmail, but
-          you can stil email someone and receive emails from someone using Yahoo
-          Mail or Outlook.
+          you can still email someone and receive emails from someone using
+          Yahoo Mail or Outlook.
         </li>
         <li>
           <strong>Social networking protocol</strong>: I mean, it&apos;s in the
@@ -95,7 +95,7 @@ const SelfHostATProto = () => {
         In a nutshell, PDS data is aggregated via &ldquo;relays&rdquo;. These
         relays produce &ldquo;firehoses&rdquo; of data that are then consumed by
         feed generators, which skim the data and produces feeds, or through
-        labelers, which label the data for consumption by some other
+        labellers, which label the data for consumption by some other
         application. You can actually see one of these firehoses yourself by
         visiting{' '}
         <AnimatedLink href="https://firesky.tv/">firesky.tv</AnimatedLink>,
@@ -149,7 +149,7 @@ const SelfHostATProto = () => {
         think it&apos;s important to at least be aware of the implications.
         It&apos;s a slippery slope when you start giving up your data and
         privacy for convenience and I think it&apos;s at minimum worth
-        considering what you&apos;re giving up when you use sonme service.
+        considering what you&apos;re giving up when you use some service.
         I&apos;m not saying you need to become a luddite and live in the forest
         for the rest of your life, but it&apos;s something worth thinking about,
         especially in today&apos;s world where data is being scraped constantly
@@ -176,9 +176,32 @@ const SelfHostATProto = () => {
       <h2 className="text-2xl font-bold mt-8">
         # Okay enough chit-chat, how do?
       </h2>
-      <p className='mb-4'>
-        
+      <p className="mb-4">
+        To host your own AT Proto PDS, you&apos;ll need a few things:
       </p>
+      <ul className="list-disc list-outside ml-5 mb-4">
+        <li>
+          <strong>A domain:</strong> You will need a custom domain because the
+          AT Proto API only works with HTTPS. THe Caddy webserver will
+          automatically configure a TLS certificate for you using Let&apos;s
+          Encrypt, but the domain is required to do so. There are many options
+          for domain registrars and I will highlight a few in the following
+          sections.
+        </li>
+        <li>
+          <strong>A cloud provider:</strong> Although not strictly necessary as
+          you could, in theory, host the PDS yourself on your own hardware,
+          it&apos;s probably easier to use a virtual machine from a cloud
+          provider. You&apos;re free to use whichever you would like but for the
+          purposes of this write-up, we&apos;ll use Google Cloud Platform (GCP)
+          as that was the platform I used.
+        </li>
+        <li>
+          <strong>An email relay service:</strong> Even if you&apos;re using the PDS
+          for personal use, I recommend setting up an email relay service to
+          send emails from your PDS for things like verification.
+        </li>
+      </ul>
     </Writing>
   );
 };
